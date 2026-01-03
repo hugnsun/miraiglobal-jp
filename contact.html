@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="zh-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 | 未来株式会社</title>
+    <link rel="icon" type="image/png" href="03.png">
+    <link rel="stylesheet" href="styles-jp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="lang.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="01.png" alt="未来株式会社" class="logo-img">
+                <div class="logo-text">
+                    未来株式会社
+                    <span>Mirai Corporation</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                    <li><a href="business.html" data-i18n="nav_business">业务板块</a></li>
+                    <li><a href="cases.html" data-i18n="nav_cases">服务案例</a></li>
+                    <li><a href="guidelines.html" data-i18n="nav_guidelines">行动方针</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="nav_contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="#" class="lang-btn active" data-lang="zh-CN">中文</a>
+                <a href="#" class="lang-btn" data-lang="ja">日本語</a>
+                <a href="#" class="lang-btn" data-lang="en">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="page-subtitle" data-i18n="contact_page_subtitle">Contact Us</div>
+            <h1 class="page-title" data-i18n="contact_page_title">联系我们</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html" data-i18n="nav_home">首页</a> <span>&gt;</span> <span data-i18n="contact_breadcrumb">联系我们</span>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-desc" data-i18n="contact_intro">无论是业务咨询还是合作洽谈，我们都期待听到您的声音。<br>请填写以下表格，我们将尽快与您联系。</p>
+            </div>
+
+            <div class="contact-wrapper reveal">
+                <!-- Left: Info -->
+                <div class="contact-info">
+                    <h3 style="font-family: var(--font-serif); font-size: 24px; margin-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 20px;">
+                        未来株式会社
+                        <span style="display:block; font-size: 14px; font-weight: 400; opacity: 0.7; margin-top: 5px;">Mirai Corporation</span>
+                    </h3>
+                    
+                    <div class="info-item">
+                        <h4 data-i18n="contact_address_label">Address</h4>
+                        <p>〒158-0097<br>东京都世田谷区用贺二丁目37番5号</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4 data-i18n="contact_email_label">Email</h4>
+                        <p>info@miraiglobal-jp.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4 data-i18n="contact_hours_label">Office Hours</h4>
+                        <p><span data-i18n="contact_hours_value">周一至周五 9:00 - 18:00</span><br><span style="font-size: 14px; opacity: 0.7;" data-i18n="contact_hours_note">(日本法定节假日除外)</span></p>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form-area">
+                    <form id="contactForm" onsubmit="return sendEmail(event)">
+                        <div class="form-group">
+                            <label class="form-label"><span data-i18n="form_name_label">姓名</span> <span style="color:red">*</span></label>
+                            <input type="text" name="name" class="form-control" required placeholder="请输入您的姓名" data-i18n-placeholder="form_name_placeholder">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-i18n="form_company_label">公司名称</label>
+                            <input type="text" name="company" class="form-control" placeholder="请输入公司名称" data-i18n-placeholder="form_company_placeholder">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label"><span data-i18n="form_contact_label">联系方式</span> <span style="color:red">*</span></label>
+                            <div style="display: flex; gap: 10px;">
+                                <input type="text" name="contact" id="contactInput" class="form-control" required placeholder="手机号或邮箱" data-i18n-placeholder="form_contact_placeholder" style="flex: 1;">
+                            </div>
+                            <small style="color: var(--color-text-light); font-size: 12px; margin-top: 6px; display: block;" data-i18n="form_contact_hint">请填写手机号或邮箱，方便我们与您联系</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-i18n="form_subject_label">咨询主题</label>
+                            <input type="text" name="subject" class="form-control" placeholder="请输入咨询主题" data-i18n-placeholder="form_subject_placeholder">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label"><span data-i18n="form_message_label">咨询内容</span> <span style="color:red">*</span></label>
+                            <textarea name="message" class="form-control" required placeholder="请输入详细需求或咨询内容..." data-i18n-placeholder="form_message_placeholder"></textarea>
+                        </div>
+
+                        <!-- Privacy Notice -->
+                        <div class="privacy-notice" style="background: rgba(0, 59, 115, 0.03); padding: 16px; border-radius: 8px; margin-bottom: 24px; border-left: 3px solid var(--color-accent);">
+                            <p style="font-size: 13px; color: var(--color-text-light); margin: 0; line-height: 1.6;" data-i18n="form_privacy_notice">
+                                🔒 您的信息安全对我们至关重要。我们承诺严格保护您的个人信息，绝不会将其泄露给任何第三方或用于其他商业目的。
+                            </p>
+                        </div>
+
+                        <div class="text-right">
+                            <button type="submit" class="btn" id="submitBtn">
+                                <span class="btn-text" data-i18n="form_submit">发送咨询</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" style="animation: spin 1s linear infinite;">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="31.4 31.4" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Success Modal -->
+                    <div id="successModal" class="success-modal" style="display: none;">
+                        <div class="success-content">
+                            <div class="success-icon">
+                                <svg width="80" height="80" viewBox="0 0 80 80">
+                                    <circle cx="40" cy="40" r="36" fill="none" stroke="#4CAF50" stroke-width="3" class="circle-animation"/>
+                                    <path d="M24 40 L35 51 L56 30" fill="none" stroke="#4CAF50" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="check-animation"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="form_success_title">提交成功！</h3>
+                            <p data-i18n="form_success_message">感谢您的咨询，我们会尽快与您联系。</p>
+                            <button class="btn" onclick="closeSuccessModal()" data-i18n="form_success_btn">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <h4>未来株式会社</h4>
+                    <p>〒158-0097 东京都世田谷区用贺二丁目37番5号</p>
+                    <p>Email: info@miraiglobal-jp.com</p>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_business_title">业务领域</h5>
+                    <ul>
+                        <li><a href="business.html#trading" data-i18n="footer_biz_1">自营跨境项目</a></li>
+                        <li><a href="business.html#advisory" data-i18n="footer_biz_2">商务协同咨询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_info_title">企业信息</h5>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer_about">公司概要</a></li>
+                        <li><a href="cases.html" data-i18n="footer_cases">服务案例</a></li>
+                        <li><a href="guidelines.html" data-i18n="footer_guidelines">行动方针</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="footer_copyright">
+                &copy; 2024 Mirai Corporation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+    <!-- Success Modal Styles -->
+    <style>
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .success-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            animation: fadeIn 0.3s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        .success-content {
+            background: #fff;
+            padding: 50px 60px;
+            border-radius: 16px;
+            text-align: center;
+            transform: scale(0.8);
+            animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+        
+        @keyframes popIn {
+            to { transform: scale(1); }
+        }
+        
+        .success-icon {
+            margin-bottom: 24px;
+        }
+        
+        .circle-animation {
+            stroke-dasharray: 226;
+            stroke-dashoffset: 226;
+            animation: drawCircle 0.6s ease forwards 0.2s;
+        }
+        
+        @keyframes drawCircle {
+            to { stroke-dashoffset: 0; }
+        }
+        
+        .check-animation {
+            stroke-dasharray: 50;
+            stroke-dashoffset: 50;
+            animation: drawCheck 0.4s ease forwards 0.6s;
+        }
+        
+        @keyframes drawCheck {
+            to { stroke-dashoffset: 0; }
+        }
+        
+        .success-content h3 {
+            font-family: var(--font-serif);
+            font-size: 28px;
+            color: var(--color-primary);
+            margin-bottom: 12px;
+        }
+        
+        .success-content p {
+            color: var(--color-text-light);
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .success-content .btn {
+            min-width: 120px;
+        }
+        
+        /* Confetti animation */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            animation: confettiFall 3s ease-out forwards;
+        }
+        
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(400px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+    
+    <!-- Email Sending Script -->
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            
+            // Check if elements exist
+            if (!btnText || !btnLoading) {
+                console.error('Button elements not found');
+                return false;
+            }
+            
+            // Get form data
+            const name = form.querySelector('input[name="name"]').value;
+            const company = form.querySelector('input[name="company"]').value || '未填写';
+            const contact = form.querySelector('input[name="contact"]').value;
+            const subject = form.querySelector('input[name="subject"]').value || '网站咨询';
+            const message = form.querySelector('textarea[name="message"]').value;
+            
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline-flex';
+            submitBtn.disabled = true;
+            
+            // Simulate submission delay (fake submission for demo)
+            setTimeout(() => {
+                // Reset button state
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Show success modal
+                showSuccessModal();
+                
+                // Reset form
+                form.reset();
+            }, 1500);
+            
+            return false;
+        }
+        
+        function showSuccessModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'flex';
+            
+            // Add confetti effect
+            createConfetti();
+        }
+        
+        function closeSuccessModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.opacity = '0';
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.style.opacity = '';
+            }, 300);
+        }
+        
+        function createConfetti() {
+            const modal = document.getElementById('successModal');
+            const colors = ['#C5A059', '#003B73', '#4CAF50', '#FF6B6B', '#FFD93D'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.top = '-10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+                confetti.style.animationDelay = Math.random() * 0.5 + 's';
+                confetti.style.animationDuration = (2 + Math.random() * 2) + 's';
+                modal.appendChild(confetti);
+                
+                // Remove confetti after animation
+                setTimeout(() => confetti.remove(), 4000);
+            }
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('successModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeSuccessModal();
+            }
+        });
+    </script>
+
+</body>
+</html>
