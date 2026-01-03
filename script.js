@@ -1,3 +1,44 @@
+// ========================================
+// Theme Toggle (Dark/Light Mode)
+// ========================================
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+// ========================================
+// Mobile Menu Toggle
+// ========================================
+function toggleMobileMenu() {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    if (menuBtn && mobileNav) {
+        menuBtn.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    }
+}
+
+// Initialize theme on page load
+(function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+        // Check system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     
     // ========================================
