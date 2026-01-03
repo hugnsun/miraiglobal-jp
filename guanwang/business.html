@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>业务板块 | 未来株式会社</title>
+    <link rel="icon" type="image/png" href="03.png">
+    <link rel="stylesheet" href="styles-jp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="lang.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="01.png" alt="未来株式会社" class="logo-img">
+                <div class="logo-text">
+                    未来株式会社
+                    <span>Mirai Corporation</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                    <li><a href="business.html" class="active" data-i18n="nav_business">业务板块</a></li>
+                    <li><a href="cases.html" data-i18n="nav_cases">服务案例</a></li>
+                    <li><a href="guidelines.html" data-i18n="nav_guidelines">行动方针</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="#" class="lang-btn active" data-lang="zh-CN">中文</a>
+                <a href="#" class="lang-btn" data-lang="ja">日本語</a>
+                <a href="#" class="lang-btn" data-lang="en">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="page-subtitle" data-i18n="biz_page_subtitle">Our Business</div>
+            <h1 class="page-title" data-i18n="biz_page_title">业务板块</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html" data-i18n="nav_home">首页</a> <span>&gt;</span> <span data-i18n="biz_breadcrumb">业务板块</span>
+        </div>
+    </div>
+
+    <!-- Business Detail 01 -->
+    <section id="trading" class="section section-white">
+        <div class="container">
+            <div class="zigzag-row reveal">
+                <div class="zigzag-content">
+                    <span class="jp-subtitle" data-i18n="biz_trading_subtitle">Trading in Practice</span>
+                    <h2 class="jp-title" style="text-align: left;" data-i18n="biz_trading_title">自营跨境项目实践</h2>
+                    
+                    <p class="section-desc" style="margin: 0 0 30px 0; text-align: left;" data-i18n="biz_trading_intro">
+                        在日本市场以自营方式运行项目，亲自承担选品、渠道与履约风险，获取真实交易与消费者反馈。
+                    </p>
+                    
+                    <p style="margin-bottom: 20px;" data-i18n="biz_trading_desc">
+                        我司以自营方式参与日本本地市场交易环境，在选品、渠道、物流与履约等环节承担经营责任与相关风险。
+                        通过小规模、可复盘的实践运行，我们用于加深对价格结构、产品适配性以及风险边界的理解。
+                    </p>
+                    
+                    <div style="background: var(--color-bg-body); padding: 30px; border-radius: 8px; border-left: 4px solid var(--color-accent);">
+                        <h4 style="color: var(--color-primary); margin-bottom: 15px; font-weight: 700;" data-i18n="biz_trading_value_title">核心价值</h4>
+                        <ul class="list-check">
+                            <li data-i18n="biz_1_point_1">真实交易环境下的风险验证</li>
+                            <li data-i18n="biz_1_point_2">第一手消费者反馈数据积累</li>
+                            <li data-i18n="biz_1_point_3">全链路履约流程的实操经验</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="zigzag-media">
+                    <div class="zigzag-img-wrapper" style="height: 400px; background: url('imgs/选品图片.jpg') center/cover no-repeat; border-radius: var(--radius-md);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Detail 02 -->
+    <section id="advisory" class="section section-gray">
+        <div class="container">
+            <div class="zigzag-row reverse reveal">
+                <div class="zigzag-content">
+                    <span class="jp-subtitle" data-i18n="biz_advisory_subtitle">China–Japan Business Advisory</span>
+                    <h2 class="jp-title" style="text-align: left;" data-i18n="biz_advisory_title">中日商务协同咨询</h2>
+                    
+                    <p class="section-desc" style="margin: 0 0 30px 0; text-align: left;" data-i18n="biz_advisory_intro">
+                        基于自营跨境实践所积累的经验与认知，提供轻量、可执行型咨询与协同支持。
+                    </p>
+                    
+                    <p style="margin-bottom: 30px;" data-i18n="biz_advisory_desc">
+                        面向正在评估进入日本市场、或处于探索与试运行阶段的企业，连接需求、翻译商业结构、减少试错成本。
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary); margin-bottom: 15px; font-weight: 700; font-size: 16px;" data-i18n="biz_advisory_target_title">适用企业</h4>
+                            <ul class="list-check" style="font-size: 14px;">
+                                <li data-i18n="biz_advisory_target_1">评估进入日本市场</li>
+                                <li data-i18n="biz_advisory_target_2">验证需求与价格</li>
+                                <li data-i18n="biz_advisory_target_3">分阶段小规模试运行</li>
+                                <li data-i18n="biz_advisory_target_4">重检既有计划与风险</li>
+                            </ul>
+                        </div>
+                        <div style="background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary); margin-bottom: 15px; font-weight: 700; font-size: 16px;" data-i18n="biz_advisory_service_title">服务形式</h4>
+                            <ul class="list-check" style="font-size: 14px;">
+                                <li data-i18n="biz_advisory_service_1">项目制咨询</li>
+                                <li data-i18n="biz_advisory_service_2">全流程伴走服务</li>
+                                <li data-i18n="biz_advisory_service_3">决策支持与共识形成</li>
+                                <li data-i18n="biz_advisory_service_4">在地沟通协助</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zigzag-media">
+                    <div class="zigzag-img-wrapper" style="height: 400px; background: url('imgs/评估图片.png') center/cover no-repeat; border-radius: var(--radius-md);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <h4>未来株式会社</h4>
+                    <p>〒158-0097 东京都世田谷区用贺二丁目37番5号</p>
+                    <p>Email: info@miraiglobal-jp.com</p>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_business_title">业务领域</h5>
+                    <ul>
+                        <li><a href="business.html#trading" data-i18n="footer_biz_1">自营跨境项目</a></li>
+                        <li><a href="business.html#advisory" data-i18n="footer_biz_2">商务协同咨询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_info_title">企业信息</h5>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer_about">公司概要</a></li>
+                        <li><a href="cases.html" data-i18n="footer_cases">服务案例</a></li>
+                        <li><a href="guidelines.html" data-i18n="footer_guidelines">行动方针</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="footer_copyright">
+                &copy; 2024 Mirai Corporation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>

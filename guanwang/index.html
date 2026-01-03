@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来株式会社 | Mirai Corporation</title>
+    <link rel="icon" type="image/png" href="03.png">
+    <link rel="stylesheet" href="styles-jp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="lang.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="01.png" alt="未来株式会社" class="logo-img">
+                <div class="logo-text">
+                    未来株式会社
+                    <span>Mirai Corporation</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active" data-i18n="nav_home">首页</a></li>
+                    <li><a href="business.html" data-i18n="nav_business">业务板块</a></li>
+                    <li><a href="cases.html" data-i18n="nav_cases">服务案例</a></li>
+                    <li><a href="guidelines.html" data-i18n="nav_guidelines">行动方针</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="#" class="lang-btn active" data-lang="zh-CN">中文</a>
+                <a href="#" class="lang-btn" data-lang="ja">日本語</a>
+                <a href="#" class="lang-btn" data-lang="en">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Floating Keywords Background -->
+        <div class="hero-keywords">
+            <!-- Large - Core concepts -->
+            <span class="keyword keyword-lg" style="--delay: 0s; --x: 12%; --y: 25%;" data-i18n="kw_cross_border">跨境</span>
+            <span class="keyword keyword-lg" style="--delay: 2s; --x: 82%; --y: 20%;" data-i18n="kw_synergy">协同</span>
+            <span class="keyword keyword-lg" style="--delay: 4s; --x: 50%; --y: 75%;" data-i18n="kw_value">价值</span>
+            
+            <!-- Medium - Key services -->
+            <span class="keyword keyword-md" style="--delay: 1s; --x: 25%; --y: 65%;" data-i18n="kw_professional">专业</span>
+            <span class="keyword keyword-md" style="--delay: 3s; --x: 70%; --y: 55%;" data-i18n="kw_business">商务</span>
+            <span class="keyword keyword-md" style="--delay: 5s; --x: 38%; --y: 35%;" data-i18n="kw_consulting">咨询</span>
+            <span class="keyword keyword-md" style="--delay: 1.5s; --x: 88%; --y: 70%;" data-i18n="kw_trust">信赖</span>
+            
+            <!-- Small - Supporting words -->
+            <span class="keyword keyword-sm" style="--delay: 2.5s; --x: 8%; --y: 50%;" data-i18n="kw_assessment">评估</span>
+            <span class="keyword keyword-sm" style="--delay: 4.5s; --x: 60%; --y: 28%;" data-i18n="kw_planning">制定</span>
+            <span class="keyword keyword-sm" style="--delay: 0.5s; --x: 75%; --y: 85%;" data-i18n="kw_steady">稳健</span>
+            <span class="keyword keyword-sm" style="--delay: 3.5s; --x: 18%; --y: 82%;" data-i18n="kw_global">全球化</span>
+            <span class="keyword keyword-sm" style="--delay: 5.5s; --x: 92%; --y: 38%;" data-i18n="kw_bridge">桥梁</span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="hero-content">
+            <span class="hero-eyebrow" data-i18n="hero_eyebrow">Mirai Corporation</span>
+            <h1 class="hero-title" data-i18n="hero_title">连接价值 · 共塑未来</h1>
+            <p class="hero-desc" data-i18n="hero_desc">专注中日跨境协同，以稳健步伐探索全球化发展路径。</p>
+            <a href="#about" class="btn btn-gold" style="border-radius: 50px;" data-i18n="hero_cta">了解更多</a>
+        </div>
+        
+        <!-- Particle Wave Canvas -->
+        <canvas id="heroWave" class="hero-wave"></canvas>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section id="about" class="section section-white values-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="jp-subtitle" data-i18n="values_subtitle">Our Values</span>
+                <h2 class="jp-title" data-i18n="values_title">核心理念</h2>
+                <p class="section-desc" data-i18n="values_desc">我们始终坚持的价值观与行事准则</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-item reveal">
+                    <div class="value-number">01</div>
+                    <div class="value-content">
+                        <h3 class="value-title" data-i18n="value_1_title">守法合规</h3>
+                        <p class="value-text" data-i18n="value_1_text">遵守法律法规与商业规则，以负责任的态度开展业务。</p>
+                    </div>
+                </div>
+                <div class="value-item reveal" style="transition-delay: 0.1s;">
+                    <div class="value-number">02</div>
+                    <div class="value-content">
+                        <h3 class="value-title" data-i18n="value_2_title">真实可靠</h3>
+                        <p class="value-text" data-i18n="value_2_text">重视信息真实与结果可靠，建立长久的信任基石。</p>
+                    </div>
+                </div>
+                <div class="value-item reveal" style="transition-delay: 0.2s;">
+                    <div class="value-number">03</div>
+                    <div class="value-content">
+                        <h3 class="value-title" data-i18n="value_3_title">稳健推进</h3>
+                        <p class="value-text" data-i18n="value_3_text">谨慎对待风险与不确定性，追求可持续的发展节奏。</p>
+                    </div>
+                </div>
+                <div class="value-item reveal" style="transition-delay: 0.3s;">
+                    <div class="value-number">04</div>
+                    <div class="value-content">
+                        <h3 class="value-title" data-i18n="value_4_title">透明互信</h3>
+                        <p class="value-text" data-i18n="value_4_text">诚实透明的沟通机制，尊重合作伙伴与团队。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Info (Zig-Zag) -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="zigzag-row reveal">
+                <div class="zigzag-media">
+                    <div class="zigzag-img-wrapper" style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; color: #999;">
+                        [社长照片 / Corporate Image]
+                    </div>
+                </div>
+                <div class="zigzag-content">
+                    <span class="jp-subtitle" data-i18n="company_subtitle">Top Message</span>
+                    <h2 class="jp-title" style="text-align: left; margin-bottom: 30px;" data-i18n="company_title">以稳健步伐<br>探索全球化发展路径</h2>
+                    <blockquote class="msg-quote" data-i18n="company_quote">
+                        "长期价值来自踏实、透明与互信。<br>我们致力于搭建中日商业价值的稳健桥梁。"
+                    </blockquote>
+                    <p class="section-desc" style="margin: 0; text-align: justify;" data-i18n="company_message">
+                        未来株式会社从具体项目和客户需求出发，提供商品出海支持、渠道与采购协同、本地化运营与市场进入咨询等服务，在实践中稳步积累经验与能力。我们期待与您携手，共同开创充满可能性的未来。
+                    </p>
+                    <div class="msg-sign">
+                        <small data-i18n="company_position">代表取缔役</small>
+                        <strong>[叶凝]</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Overview -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="jp-subtitle" data-i18n="business_subtitle">Our Business</span>
+                <h2 class="jp-title" data-i18n="business_title">核心业务板块</h2>
+                <p class="section-desc" data-i18n="business_desc">自营实践与咨询协同的双轮驱动，为您提供全方位的跨境支持。</p>
+            </div>
+
+            <!-- Biz 01 -->
+            <div class="biz-card-h reveal">
+                <div class="biz-card-visual" style="background: url('imgs/跨境图片.jpeg') center/cover no-repeat;"></div>
+                <div class="biz-card-content">
+                    <div class="biz-num">01</div>
+                    <h3 class="biz-title" data-i18n="biz_1_title">自营跨境项目实践</h3>
+                    <p class="biz-desc" data-i18n="biz_1_desc">在日本市场亲身入局，承担选品、渠道与履约的全链条风险。通过小规模、可复盘的实践运行，获取真实交易与消费者反馈。</p>
+                    <ul class="list-check">
+                        <li data-i18n="biz_1_point_1">真实交易环境下的风险验证</li>
+                        <li data-i18n="biz_1_point_2">第一手消费者反馈数据积累</li>
+                        <li data-i18n="biz_1_point_3">全链路履约流程的实操经验</li>
+                    </ul>
+                    <a href="business.html#trading" class="btn btn-outline" style="margin-top: 30px; align-self: flex-start;" data-i18n="btn_learn_more">了解详情</a>
+                </div>
+            </div>
+
+            <!-- Biz 02 -->
+            <div class="biz-card-h reveal" style="flex-direction: row-reverse;">
+                <div class="biz-card-visual" style="background: url('imgs/合作图片.png') center/cover no-repeat;"></div>
+                <div class="biz-card-content">
+                    <div class="biz-num">02</div>
+                    <h3 class="biz-title" data-i18n="biz_2_title">中日商务协同咨询</h3>
+                    <p class="biz-desc" data-i18n="biz_2_desc">基于自营跨境实践所积累的经验与认知，提供轻量、可执行型咨询与协同支持，连接需求、翻译商业结构。</p>
+                    <ul class="list-check">
+                        <li data-i18n="biz_2_point_1">市场进入评估与策略制定</li>
+                        <li data-i18n="biz_2_point_2">试运行伴走服务</li>
+                        <li data-i18n="biz_2_point_3">在地沟通与信息整理协助</li>
+                    </ul>
+                    <a href="business.html#advisory" class="btn btn-outline" style="margin-top: 30px; align-self: flex-start;" data-i18n="btn_learn_more">了解详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Preview -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="jp-subtitle" data-i18n="cases_subtitle">Service Cases</span>
+                <h2 class="jp-title" data-i18n="cases_title">服务案例</h2>
+            </div>
+            
+            <div class="feature-grid" style="margin-top: 0; padding-bottom: 0;">
+                <div class="card reveal">
+                    <h3 class="card-title" data-i18n="case_1_title">消费电子品牌出海</h3>
+                    <p class="card-desc" data-i18n="case_1_desc">协助品牌制定日本市场策略，6个月内完成首批产品上线。</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <h3 class="card-title" data-i18n="case_2_title">生活杂货供应链优化</h3>
+                    <p class="card-desc" data-i18n="case_2_desc">优化物流链路，采购成本降低15%，交货周期缩短20%。</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <h3 class="card-title" data-i18n="case_3_title">IP衍生品跨境自营</h3>
+                    <p class="card-desc" data-i18n="case_3_desc">引进中国热门IP衍生品，通过快闪店验证市场受众基础。</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.3s;">
+                    <h3 class="card-title" data-i18n="case_4_title">SaaS产品调研</h3>
+                    <p class="card-desc" data-i18n="case_4_desc">深度用户访谈与竞品分析，为产品迭代提供数据支撑。</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 60px;">
+                <a href="cases.html" class="btn" data-i18n="btn_view_more">查看更多案例</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Profile & Access -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="jp-subtitle" data-i18n="profile_subtitle">Company Profile</span>
+                <h2 class="jp-title" data-i18n="profile_title">公司概要</h2>
+            </div>
+            
+            <div class="stats-grid reveal" style="margin-bottom: 50px;">
+                <div class="stat-item">
+                    <span class="stat-label" data-i18n="profile_name_label">公司名称</span>
+                    <span class="stat-value" data-i18n="profile_name_value">未来株式会社</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" data-i18n="profile_founded_label">成立时间</span>
+                    <span class="stat-value" data-i18n="profile_founded_value">2024年</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" data-i18n="profile_address_label">所在地</span>
+                    <span class="stat-value" data-i18n="profile_address_value">东京都世田谷区用贺二丁目37番5号</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" data-i18n="profile_contact_label">联系方式</span>
+                    <span class="stat-value">info@miraiglobal-jp.com</span>
+                </div>
+            </div>
+            
+            <div class="map-container reveal" style="border-radius: var(--radius-md); overflow: hidden; background: linear-gradient(135deg, #e8f4f8 0%, #f5f7fa 100%);">
+                <a href="https://www.google.com/maps/search/?api=1&query=東京都世田谷区用賀2丁目37-5" target="_blank" class="map-link" style="display: flex; align-items: center; justify-content: center; min-height: 280px; text-decoration: none;">
+                    <div class="map-placeholder" style="text-align: center; padding: 40px;">
+                        <div style="font-size: 48px; margin-bottom: 20px;">📍</div>
+                        <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--color-primary); margin-bottom: 12px;" data-i18n="map_office_title">办公地址</h4>
+                        <p style="font-size: 16px; color: var(--color-text); margin-bottom: 8px;">〒158-0097</p>
+                        <p style="font-size: 16px; color: var(--color-text); margin-bottom: 20px;" data-i18n="profile_address_value">东京都世田谷区用贺二丁目37番5号</p>
+                        <span class="btn btn-outline" style="display: inline-block;" data-i18n="map_view_btn">在 Google Maps 中查看</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <h4>未来株式会社</h4>
+                    <p>〒158-0097 东京都世田谷区用贺二丁目37番5号</p>
+                    <p>Email: info@miraiglobal-jp.com</p>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_business_title">业务领域</h5>
+                    <ul>
+                        <li><a href="business.html#trading" data-i18n="footer_biz_1">自营跨境项目</a></li>
+                        <li><a href="business.html#advisory" data-i18n="footer_biz_2">商务协同咨询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_info_title">企业信息</h5>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer_about">公司概要</a></li>
+                        <li><a href="cases.html" data-i18n="footer_cases">服务案例</a></li>
+                        <li><a href="guidelines.html" data-i18n="footer_guidelines">行动方针</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="footer_copyright">
+                &copy; 2024 Mirai Corporation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行动方针 | 未来株式会社</title>
+    <link rel="icon" type="image/png" href="03.png">
+    <link rel="stylesheet" href="styles-jp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="lang.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="01.png" alt="未来株式会社" class="logo-img">
+                <div class="logo-text">
+                    未来株式会社
+                    <span>Mirai Corporation</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                    <li><a href="business.html" data-i18n="nav_business">业务板块</a></li>
+                    <li><a href="cases.html" data-i18n="nav_cases">服务案例</a></li>
+                    <li><a href="guidelines.html" class="active" data-i18n="nav_guidelines">行动方针</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <a href="#" class="lang-btn active" data-lang="zh-CN">中文</a>
+                <a href="#" class="lang-btn" data-lang="ja">日本語</a>
+                <a href="#" class="lang-btn" data-lang="en">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="page-subtitle" data-i18n="guidelines_page_subtitle">Action Guidelines</div>
+            <h1 class="page-title" data-i18n="guidelines_page_title">行动方针</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html" data-i18n="nav_home">首页</a> <span>&gt;</span> <span data-i18n="guidelines_breadcrumb">行动方针</span>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-desc" data-i18n="guidelines_intro">
+                    未来株式会社在跨境实践与协同业务中，以<span class="highlight">守法、诚信与稳健推进</span>为基本原则。<br>
+                    我们遵循以下五大行动方针：
+                </p>
+            </div>
+
+            <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <!-- 1 -->
+                <div class="card reveal">
+                    <div style="font-size: 40px; color: var(--color-accent); margin-bottom: 20px;">01</div>
+                    <h3 class="card-title" data-i18n="guideline_1_title">遵守法律法规与商业规则</h3>
+                    <p class="card-desc" data-i18n="guideline_1_desc">始终将合规性放在首位，以负责任的态度开展所有业务活动，维护商业秩序。</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <div style="font-size: 40px; color: var(--color-accent); margin-bottom: 20px;">02</div>
+                    <h3 class="card-title" data-i18n="guideline_2_title">重视真实与可靠</h3>
+                    <p class="card-desc" data-i18n="guideline_2_desc">在自营实践与咨询支持过程中，重视信息真实、过程合规与结果可靠，不夸大、不隐瞒。</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <div style="font-size: 40px; color: var(--color-accent); margin-bottom: 20px;">03</div>
+                    <h3 class="card-title" data-i18n="guideline_3_title">稳健与可持续</h3>
+                    <p class="card-desc" data-i18n="guideline_3_desc">谨慎对待风险与不确定性，不追求短期爆发，而是以可持续的节奏推进项目与合作。</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="card reveal" style="grid-column: span 1.5; transition-delay: 0.3s;">
+                    <div style="font-size: 40px; color: var(--color-accent); margin-bottom: 20px;">04</div>
+                    <h3 class="card-title" data-i18n="guideline_4_title">诚实透明的沟通</h3>
+                    <p class="card-desc" data-i18n="guideline_4_desc">重视与客户及合作伙伴的沟通，以诚实与透明为基础建立信任关系，确保信息对称。</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="card reveal" style="grid-column: span 1.5; transition-delay: 0.4s;">
+                    <div style="font-size: 40px; color: var(--color-accent); margin-bottom: 20px;">05</div>
+                    <h3 class="card-title" data-i18n="guideline_5_title">尊重团队与个体</h3>
+                    <p class="card-desc" data-i18n="guideline_5_desc">尊重团队成员的个体差异与工作节奏，营造安心、协作与健康的工作环境，激发创造力。</p>
+                </div>
+            </div>
+            
+            <!-- CSS Grid fix for the last two items to be centered if screen is wide enough, or fall back naturally -->
+            <style>
+                @media (max-width: 992px) {
+                    .feature-grid .card[style*="grid-column"] {
+                        grid-column: span 1 !important;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <h4>未来株式会社</h4>
+                    <p>〒158-0097 东京都世田谷区用贺二丁目37番5号</p>
+                    <p>Email: info@miraiglobal-jp.com</p>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_business_title">业务领域</h5>
+                    <ul>
+                        <li><a href="business.html#trading" data-i18n="footer_biz_1">自营跨境项目</a></li>
+                        <li><a href="business.html#advisory" data-i18n="footer_biz_2">商务协同咨询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer_info_title">企业信息</h5>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer_about">公司概要</a></li>
+                        <li><a href="cases.html" data-i18n="footer_cases">服务案例</a></li>
+                        <li><a href="guidelines.html" data-i18n="footer_guidelines">行动方针</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="footer_copyright">
+                &copy; 2024 Mirai Corporation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>
